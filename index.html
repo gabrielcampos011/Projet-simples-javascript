@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="teste"></h1>
+    <p>Este é o meu primeiro documento HTML! Estou muito feliz!</p>
+    <p>Este é um momento único! Estou criando um site!</p>
+    <p id="resposta"></p>
+    
+    <form id="nomeForm">
+        <input type="text" id="nomeInput" placeholder="Digite seu nome" required>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <script>
+        document.getElementById('nomeForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão do formulário
+            
+            let nome = document.getElementById('nomeInput').value;
+            
+            if (nome.trim() !== '') {
+                document.getElementById('teste').innerHTML = 'Olá, ' + nome + '!';
+                document.getElementById('resposta').innerHTML = 'É um grande prazer te conhecer, ' + nome + '!';
+                
+                // Limpa o input após enviar
+                document.getElementById('nomeInput').value = '';
+            }
+        });
+    </script>
+</body>
+</html>

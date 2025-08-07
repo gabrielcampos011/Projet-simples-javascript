@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(121, 50, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+p{
+    color: rgb(255, 255, 255);
+    line-height: 0px;
+    font-size: 16px;
+}
+
+/* Estilos para o formulário */
+#nomeForm {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#nomeInput {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}
+
+#nomeInput::placeholder {
+    color: #999;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(121, 50, 50);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(230, 230, 230);
+}
