@@ -49,4 +49,4 @@ Javascript/
 
 ---
 
-*Projeto criado como parte do aprendizado de desenvolvimento web.* 
+*Projeto criado como parte do aprendizado de desenvolvimento web.*
